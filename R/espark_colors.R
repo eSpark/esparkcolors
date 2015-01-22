@@ -7,7 +7,7 @@
 #' @examples 
 #' espark_color("blue")
 
-espark_color <- function(color) {
+esparkColor <- function(color) {
 	if(color == "blue") {
 	  rgb(0, 102, 204, maxColorValue = 255)
 	} else if(color == "green") {
