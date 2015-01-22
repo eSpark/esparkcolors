@@ -17,7 +17,7 @@ Or pass a vector of color names
 
     eSparkColor(c("blue", "green", "blue"))
 
-## Avaiable Colors
+## Available Colors
 
 * blue
 * green
