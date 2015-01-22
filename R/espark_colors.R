@@ -7,20 +7,16 @@
 #' @examples 
 #' espark_color("blue")
 
-esparkColor <- function(color) {
-	if(color == "blue") {
-	  rgb(0, 102, 204, maxColorValue = 255)
-	} else if(color == "green") {
-	  rgb(150, 211, 95, maxColorValue = 255)
-	} else if(color == "orange") {
-	  rgb(255, 153, 0, maxColorValue = 255)
-	} else if(color == "purple") {
-	  rgb(160, 90, 200, maxColorValue = 255)
-	} else if(color == "red") {
-	  rgb(255, 80, 80, maxColorValue = 255)
-	} else if(color == "yellow") {
-	  rgb(255, 204, 51, maxColorValue = 255)
-	} else if(color == "gray") {
-	  rgb(205, 205, 205, maxColorValue = 255)
-	}
+eSparkColor <- function(colors) {
+  colors <- tolower(colors)
+  espark_colors = list(
+    blue = rgb(0, 102, 204, maxColorValue = 255),
+    green = rgb(150, 211, 95, maxColorValue = 255),
+    orange = rgb(255, 153, 0, maxColorValue = 255),
+    purple = rgb(160, 90, 200, maxColorValue = 255),
+    red = rgb(255, 80, 80, maxColorValue = 255),
+    yellow = rgb(255, 204, 51, maxColorValue = 255),
+    gray = rgb(205, 205, 205, maxColorValue = 255)
+  )
+   unname(sapply(colors, function(col) as.character(col)))
 }
