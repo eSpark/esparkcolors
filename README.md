@@ -15,9 +15,9 @@ Once loaded you can use the espark_color() function to load the hex value for on
 
 Or pass a vector of color names
 
-   eSparkColor(c("blue", "green", "blue"))
+    eSparkColor(c("blue", "green", "blue"))
 
-Avaiable Colors
+## Avaiable Colors
 
 * blue
 * green
@@ -25,4 +25,4 @@ Avaiable Colors
 * purple
 * red
 * yellow
-*gray
+* gray
