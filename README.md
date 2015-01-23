@@ -9,20 +9,19 @@ Install with the devtools package
     devtools::install_github("espark/esparkcolors")
     library(esparkcolors)
     
-Once loaded you can use the espark_color() function to load the hex value for one of seven colors
+## Usage
+    
+Once loaded you can use the eSparkColor() function to load the hex value for one of seven colors
 
     eSparkColor("blue")
 
 Or pass a vector of color names
 
     eSparkColor(c("blue", "green", "blue"))
+    
+There are seven available colors.
+Use them in plots
 
-## Available Colors
-
-* blue
-* green
-* orange
-* purple
-* red
-* yellow
-* gray
+    barplot(7:1, col=eSparkColor(c("blue", "green", "orange", "purple", "red", "yellow", "gray")))
+    
+![ColorsBar](http://i.imgur.com/xB7jH5T.png)
