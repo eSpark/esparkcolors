@@ -10,13 +10,13 @@
 eSparkColor <- function(colors) {
   colors <- tolower(colors)
   espark_colors = list(
-    blue = rgb(0, 102, 204, maxColorValue = 255),
-    green = rgb(150, 211, 95, maxColorValue = 255),
-    orange = rgb(255, 153, 0, maxColorValue = 255),
-    purple = rgb(160, 90, 200, maxColorValue = 255),
-    red = rgb(255, 80, 80, maxColorValue = 255),
-    yellow = rgb(255, 204, 51, maxColorValue = 255),
-    gray = rgb(205, 205, 205, maxColorValue = 255)
+    "blue" = rgb(0, 102, 204, maxColorValue = 255),
+    "green" = rgb(128, 209, 65, maxColorValue = 255),
+    "orange" = rgb(255, 153, 0, maxColorValue = 255),
+    "purple" = rgb(160, 90, 200, maxColorValue = 255),
+    "red" = rgb(255, 80, 80, maxColorValue = 255),
+    "yellow" = rgb(255, 204, 51, maxColorValue = 255),
+    "gray" = rgb(205, 205, 205, maxColorValue = 255)
   )
-   unname(sapply(colors, function(col) as.character(col)))
+   unname(sapply(colors, function(col) espark_colors[[as.character(col)]]))
 }
