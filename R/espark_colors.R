@@ -11,6 +11,7 @@ eSparkColor <- function(colors) {
   colors <- tolower(colors)
   espark_colors = list(
     "blue" = rgb(0, 102, 204, maxColorValue = 255),
+    "lightblue" = rgb(26, 137, 185, maxColorValue = 255),
     "green" = rgb(128, 209, 65, maxColorValue = 255),
     "orange" = rgb(255, 153, 0, maxColorValue = 255),
     "purple" = rgb(160, 90, 200, maxColorValue = 255),
